@@ -2,10 +2,43 @@
 <html lang="en">
 <head>
     <title>Exercise 3</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/styles/styles.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
+    <div class="container">
+        <div class="row pt-30">
+            <div class="col-md-12">
+                <form>
+                <div class="form-group row">
+                    <label for="filter" class="col-sm-2 col-form-label">Filter</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" placeholder="Filter" id="filter">
+                    </div>
+                </div>
+                </form>
+                <table id="planet-list" class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Diameter</th>
+                        <th>Orbital Period</th>
+                        <th>Population</th>
+                        <th>Rotation Period</th>
+                        <th>Surface Water</th>
+                        <th>Terrain</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul id="planet-pagination" class="pagination justify-content-center"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/scripts/exercise-3.js"></script>
 </body>
 </html>
